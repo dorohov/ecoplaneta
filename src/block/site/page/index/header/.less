@@ -46,9 +46,9 @@
 		@media @media-size-xs {
 			z-index: 3;
 			position: relative;
-			padding-top: 40px;
-			padding-bottom: 40px;
-			min-height: 360px;
+			padding-top: 75px;
+			padding-bottom: 75px;
+			//min-height: 360px;
 		}
 		@media @media-size-sm {
 			padding-top: 70px;
@@ -70,7 +70,7 @@
 		font-weight: 700;
 		text-align: center;
 		@media @media-size-xs {
-			font-size: @b-fs - 4;
+			font-size: @b-fs - 5;
 			line-height: @b-lh - 6;
 		}
 		@media @media-screen {
@@ -100,8 +100,8 @@
 	&row{
 		letter-spacing: 1px;
 		justify-content: center;
-		margin-top: -5px;
-		margin-bottom: 20px;
+		margin-top: -15px;
+		margin-bottom: 35px;
 		@media @media-screen {
 			justify-content: flex-start;
 			margin-bottom: 40px;
@@ -112,7 +112,7 @@
 		}
 	}
 	&cols{		
-		padding-top: 5px;
+		padding-top: 15px;
 		@media @media-size-xxl {
 			padding-left: 25px;
 			padding-right: 25px;
@@ -120,8 +120,9 @@
 	}
 	&scrollto{
 		text-align: center;
-		@media @media-size-xs {display: none}
-		@media @media-notsmart {
+		display: none;
+		@media @media-screen {
+			display: block;
 			position: absolute;
 			z-index: 4;
 			bottom: 3vw;

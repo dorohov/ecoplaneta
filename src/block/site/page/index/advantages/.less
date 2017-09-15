@@ -1,0 +1,107 @@
+.index-advantages__{
+	&block{
+		position: relative;	
+		padding-top: 35px;
+		padding-bottom: 15px;
+		@media @media-screen {
+			padding-top: 4vw;
+			padding-bottom: 6.9vw;
+		}
+	}
+	&row{
+		margin-bottom: 20px;
+		@media @media-screen {
+			margin-bottom: 2vw;
+		}
+	}
+	&cols{
+		&.is--cols-3{
+			@media @media-device {
+				.makeCols(6, 12);
+			}
+			@media @media-size-xs-p {
+				.makeCols(12, 12);
+			}
+			@media @media-size-sm-l {
+				.makeCols(4, 12);
+			}
+			@media @media-screen {
+				.makeCols(4, 12);
+			}
+			@media @media-size-xxl {
+				.makeCols(3, 12);
+			}
+		}
+	}
+	&svg-block{
+		display: flex;
+		height: 360px;
+		justify-content: center;
+		align-items: center;
+		background-color: fadeout(@blue, 90%);
+	}
+	&svg{
+		width: 100%;
+	}
+	&svg-text-num{
+		font-weight: 700;
+		transform: matrix(1,0,0,1,40,258);
+		font-size: 250px;
+	}
+	&svg-text-heading{	
+		font-weight: 700;
+		fill: @blue;	
+		transform: matrix(1,0,0,1,146,217);
+		font-size: 50px;
+		letter-spacing: 1px;
+	}
+	&svg-text-note{
+		fill: @blue;
+		transform: matrix(1,0,0,1,146,244);
+		font-size: @b-fs;		
+	}
+}
+.advantages-item__{
+	&item{}
+	&inner{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 360px;
+		padding: 10px;
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.index-advantages__cols:nth-child(1) &,
+		.index-advantages__cols:nth-child(3) &,
+		.index-advantages__cols:nth-child(6) &{
+			&::before{
+				background-color: fadeout(@blue, 20%);
+			}
+		}
+		.index-advantages__cols:nth-child(2) &,
+		.index-advantages__cols:nth-child(4) &,
+		.index-advantages__cols:nth-child(5) &,
+		.index-advantages__cols:nth-child(7) &{
+			&::before{
+				background-color: fadeout(@blue-light, 20%);
+			}
+		}
+	}
+	&heading{
+		position: relative;
+		z-index: 2;
+		color: @white;
+		width: 100%;
+		text-align: center;
+		.calcFontSize(20, 23, 320, 1680);
+		.calcLineHeight(22, 25, 320, 1680);
+	}
+}

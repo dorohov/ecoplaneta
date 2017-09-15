@@ -42,6 +42,12 @@
 	}
 	&svg{
 		width: 100%;
+		html.msie &{
+			width: 100vw;
+			height: 100vw;
+			max-width: 360px;
+			max-height: 360px;
+		}
 	}
 	&svg-text-num{
 		font-weight: 700;

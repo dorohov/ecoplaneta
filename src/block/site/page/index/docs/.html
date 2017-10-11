@@ -1,0 +1,40 @@
+<div class="{{block_prefix}}block">	
+	<div class="{{block_prefix}}container container">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading"
+			header_level="h2"
+			header="Техническая информация"
+		]]	
+		<div class="{{block_prefix}}row row  is--gutter  is--wrap">
+			<div class="{{block_prefix}}cols cols  is--cols-3">
+				[[azbntple 
+					tpl="/src/block/site/page/index/docs/item.html"
+					block_prefix="docs-item__"  
+					block_docs="op-biotec.pdf"
+					block_heading="Опросный лист Биотек+"  
+					block_note="Информация необходимая для изготовления и пусконаладки установок биологической очистки сточных вод серии «БИОТЕК+»"
+				]]	
+			</div>
+			<div class="{{block_prefix}}cols cols  is--cols-3">
+				[[azbntple 
+					tpl="/src/block/site/page/index/docs/item.html"
+					block_prefix="docs-item__"  
+					block_docs="op-kns.pdf"
+					block_heading="Опросный лист КНС"  
+					block_note="Для заказа насосной станции (КНС)"
+				]]	
+			</div>
+			<div class="{{block_prefix}}cols cols  is--cols-3">
+				[[azbntple 
+					tpl="/src/block/site/page/index/docs/item.html"
+					block_prefix="docs-item__"  
+					block_docs="op-oka.pdf"
+					block_heading="Опросный лист ОКА"  
+					block_note="Для привязки очистных сооружений нефтесодержащих сточных вод"
+				]]	
+			</div>
+		</div>
+	</div> 
+</div>

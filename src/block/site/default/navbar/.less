@@ -46,8 +46,14 @@
 		&.is--header{
 			//@media @media-device{width: 100%;}
 			//@media @media-screen-lg{width: 14%;}
+			@media @media-size-xs-p {
+				max-width: 130px;
+			}
 		}
 		&.is--collapse{
+			@media @media-size-xs-p {
+				max-width: 170px;
+			}
 			//@media @media-device{width: 0; padding: 0; display: none;}
 		}
 	}
@@ -70,10 +76,17 @@
 	}
 	&tel-block{
 		font-size: @navbar-fs - 2;
-		line-height: @navbar-lh;	
+		line-height: @navbar-lh;
+		text-align: right;	
 		@media @media-screen {		
 			font-size: @navbar-fs + 6;
 		}
+	}
+	&address-block{
+		.calcFontSize(14, 18, 320, 1680);
+		.calcLineHeight(18, 22, 320, 1680);
+		color: @navbar-color-tel;
+		text-align: right;	
 	}
 	&tel{
 		&, 
